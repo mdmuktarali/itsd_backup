@@ -1,0 +1,27 @@
+/* It is recommended to place all your extra/additional CSS rules here */
+
+/*svg .a{fill:none;stroke:#838383;}*/
+
+#itsd_logo {
+    /*background: #8ac148 none repeat scroll 0 0;*/
+    /*background-image: -webkit-linear-gradient(135deg,#f35626,#feab3a);*/
+    /*-webkit-text-fill-color: transparent;*/
+    /*-webkit-animation: hue 60s infinite linear;*/
+    fill: #fff;
+    height: 5.65em;
+    width: 9em;
+}
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+
+@keyframes hue {
+    from {
+        fill: hue-rotate(0deg);
+    }
+
+    to {
+        fill: hue-rotate(-360deg);
+    }
+}

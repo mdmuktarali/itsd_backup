@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ITSD</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/other_images/favicon.png">
+	
+	<!--konpa icon start-->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+	<!--konpa icon start-->
+	
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- vegas bg -->
+    <link href="assets/js/vegas/jquery.vegas.min.css" rel="stylesheet">
+    <!-- owl carousel css -->
+    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <!-- intro animations -->
+    <link href="assets/js/wow/animate.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- ionicons -->
+    <link href="assets/css/ionicons/css/ionicons.css" rel="stylesheet">
+    <!-- lightbox -->
+    <link href="assets/js/lightbox/css/lightbox.css" rel="stylesheet">
+
+    <!-- styles for this template -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- place your extra custom styles in this file -->
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<!-- data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined, and when background change is disabled for mobile -->
+<!-- data-overlay: "true" - semi-transparent black overlay on top of bg enabled, "false" - disabled -->
+<!-- data-overlay-opacity: set the opacity/transparency of the black overlay -->
+<body data-default-background-img="https://source.unsplash.com/random" data-overlay="true" data-overlay-opacity="0.35">
+
+<!-- Outer Container -->
+<div id="outer-container">
+
+    <!-- Left Sidebar -->
+    <section id="left-sidebar">
+
+        <!-- ==================================================================
+        LOGO 
+        ==================================================================  -->
+        <!-- change the img src to your logo -->
+        <div class="logo">
+            <!--<a href="#intro" class="link-scroll" id="itsd_logo"><img src="assets/images/itsd.svg" alt="ITSD"></a>-->
+            <a href="#intro" class="link-scroll">
+                <svg xmlns="http://www.w3.org/2000/svg" id="itsd_logo">
+                    <path d="M12.2 5h8.4v9.3h-8.4V5zM12.2 23.3h8.4v48.4h-8.4V23.3z" class="a"/>
+                    <path d="M34.9 9.5h8.4v13.6h7.9v6.7h-7.9v31.7c0 1.7 0.6 2.8 1.8 3.4 0.6 0.3 1.7 0.5 3.2 0.5 0.4 0 0.8 0 1.3 0 0.5 0 1-0.1 1.6-0.2v6.5c-1 0.3-1.9 0.5-3 0.6 -1 0.1-2.1 0.2-3.3 0.2 -3.9 0-6.5-1-7.9-2.9 -1.4-2-2.1-4.5-2.1-7.6V29.8h-6.7v-6.7h6.7V9.5H34.9z"
+                          class="a"/>
+                    <path d="M64.4 56.5c0.3 2.7 1 4.8 2.1 6.3 2.1 2.6 5.8 3.9 11.1 3.9 3.1 0 5.9-0.7 8.3-2 2.4-1.3 3.6-3.3 3.6-6.1 0-2.1-1-3.7-2.9-4.8 -1.2-0.7-3.6-1.4-7.2-2.3l-6.7-1.6c-4.3-1-7.4-2.2-9.5-3.4 -3.6-2.2-5.4-5.3-5.4-9.2 0-4.6 1.7-8.3 5.1-11.2 3.4-2.8 8-4.3 13.8-4.3 7.5 0 13 2.1 16.3 6.4 2.1 2.7 3.1 5.7 3 8.8h-7.8c-0.2-1.8-0.8-3.5-2-5 -2-2.1-5.3-3.2-10.2-3.2 -3.2 0-5.6 0.6-7.3 1.8 -1.7 1.2-2.5 2.7-2.5 4.7 0 2.1 1.1 3.8 3.3 5.1 1.3 0.8 3.1 1.4 5.5 2l5.6 1.3c6.1 1.4 10.2 2.8 12.2 4.1 3.2 2.1 4.8 5.4 4.8 9.9 0 4.3-1.7 8.1-5.1 11.2 -3.4 3.1-8.5 4.7-15.4 4.7 -7.4 0-12.7-1.6-15.8-4.9 -3.1-3.3-4.8-7.3-5-12.2h8V56.5z"
+                          class="a"/>
+                    <path d="M133.9 24.6c1.5 0.9 3.1 2.5 5 4.8V4.8h8v66.9h-7.5v-6.8c-1.9 3-4.2 5.2-6.8 6.5 -2.6 1.3-5.7 2-9.1 2 -5.5 0-10.2-2.3-14.3-6.8 -4-4.6-6-10.6-6-18.2 0-7.1 1.8-13.2 5.5-18.4 3.7-5.2 8.9-7.8 15.7-7.8C128.2 22.2 131.4 23 133.9 24.6zM115.4 61c2.2 3.5 5.8 5.3 10.7 5.3 3.8 0 7-1.6 9.4-4.9 2.5-3.3 3.7-7.9 3.7-14 0-6.1-1.3-10.7-3.8-13.6 -2.5-2.9-5.7-4.4-9.4-4.4 -4.2 0-7.5 1.6-10.1 4.7s-3.9 7.8-3.9 13.9C112 53.2 113.1 57.5 115.4 61z"
+                          class="a"/>
+                    <path d="M167.5 79.9c-57.3-5.7-104.1 8.1-132.9 20.4H16.5c58.9-32.3 126.6-25.2 151.1-21.1V79.9z"
+                          class="a"/>
+                </svg>
+            </a>
+        </div><!-- .logo -->
+        <!-- ==================== END: LOGO ==================== -->
+
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span
+                class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+            <li id="menu-item-text" class="menu-item scroll"><a href="#about">About</a></li>
+            <!--<li id="menu-item-carousel" class="menu-item scroll"><a href="#services">Services</a></li>-->
+            <li id="menu-item-grid" class="menu-item scroll"><a href="#services">Services</a></li>
+            <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Featured</a></li>
+            <li id="menu-item-tabs" class="menu-item scroll"><a href="#tabs">Courses</a></li>
+            <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>
+            <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+            <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+    </section><!-- #left-sidebar -->
+    <!-- end: Left Sidebar -->
+
+    <!-- ==================================================================
+    MAIN CONTENT
+    ==================================================================  -->
+    <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+         - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+    <section id="main-content" class="clearfix">
+
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix"
+                 data-custom-background-img="https://source.unsplash.com/random">
+            <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">
+                <div class="col-sm-10 col-md-9 pull-right">
+
+                    <!-- Start: Section content to edit -->
+
+                    <!-- <p> text in .feature-text is larger  -->
+                    <section class="feature-text">
+                        <h1>We are what we think.</h1>
+                        <p>All that we are arises with out thoughts. With our thoughts, we make the world</p>
+                        <!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+                        <p><a href="#about" class="link-scroll btn btn-outline-inverse btn-lg">find out more about
+                            us</a></p>
+                    </section>
+
+                    <!-- End: Section content to edit -->
+
+                </div><!-- .col-sm-10 -->
+            </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="about" class="section-wrapper clearfix"
+                 data-custom-background-img="https://source.unsplash.com/random">
+            <div class="content-wrapper clearfix">
+                <div class="col-sm-10 col-md-9 pull-right">
+
+                    <!-- Start: Section content to edit -->
+
+                    <h1 class="section-title">About</h1>
+
+                    <p class="feature-paragraph"><img data-img-src="assets/images/other_images/transp-image5b.png" class="lazy pull-right" alt="Lorem Ipsum"> 
+                    
+
+                        We strive for perfection with every training we provide, site we build, or workshop we bring to generation. Mission of <a
+                        href="#carousel">It Solution Dinajpur</a> is to provide quality training to our trainee.
+                    </p>
+                    
+                    <p>It Solution Dinajpur has been around since 2012. The company started as a IT training center. Now we’re one of the leading IT training platform, We also democratize technology for multi level businesses, creating innovative software products that empower our customers to grow.</p>
+                    <h4>Training can exist in new forms. Technology can be more fun.</h4>
+                    <!-- to make a popup/modal link add an onClick function call to the function:
+                    - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                    <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');"
+                      class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                    <!-- content which will be shown in the popup/modal when clicking on the above link
+                    - it is important to set a unique id -->
+                    <div class="content-to-populate-in-modal" id="modal-content-1">
+                        <h1>Lorem Ipsum</h1>
+                        <p><img data-img-src="assets/images/other_images/transp-image4.png"
+                            class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit. Sed in urna vel ante mollis tincidunt. Donec nec
+                            magna condimentum tortor laoreet lobortis. Nunc accumsan sapien eu tortor fringilla, et
+                            condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu
+                            turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis
+                            euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus
+                            interdum pharetra.</p>
+                            <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo
+                                aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra.
+                                Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed,
+                                consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et
+                                vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
+                                <h3>Duis dictum lorem metus, vitae dapibus</h3>
+                                <p><img data-img-src="assets/images/other_images/transp-image3.png"
+                                    class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Sed auctor urna mi,
+                                    sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim,
+                                    placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta.
+                                    Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio
+                                    ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget
+                                    lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus
+                                    sagittis nec at ante. </p>
+                                    <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo
+                                        aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra.
+                                        Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed,
+                                        consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et
+                                        vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
+                                    </div><!-- #modal-content-1 -->
+
+                                    <!-- End: Section content to edit -->
+
+                </div><!-- .col-sm-10 -->
+            </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+        <!-- ==================== SECTION TYPE: Carousel ==================== -->
+        <!-- This type of section should contain slides with an icon, text, and an optional button -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="carousel" class="section-wrapper clearfix"
+                 data-custom-background-img="https://source.unsplash.com/random">
+            <div class="content-wrapper clearfix">
+
+                <!-- Start: Section content to edit -->
+
+                <!-- the carousel is initialised in the initialise-functions.js file, using the id of the container .carousel below -->
+                <div id="features-carousel" class="carousel slide with-title-indicators max-height"
+                     data-height-percent="70" data-ride="carousel">
+
+                    <!-- Indicators - slide navigation -->
+                    <!-- each slide should have data-slide-to set to the index of the slide (starting from 0), and a short title link for the slide -->
+                    <ol class="carousel-indicators title-indicators">
+                        <li data-target="#features-carousel" data-slide-to="0" class="active">IT Training</li>
+                        <li data-target="#features-carousel" data-slide-to="1">Software Development</li>
+                        <li data-target="#features-carousel" data-slide-to="2">Online Marketing</li>
+                        <li data-target="#features-carousel" data-slide-to="3">Consultancy</li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                        <!-- CAROUSEL SLIDE 1 -->
+                        <div class="item active">
+                            <div class="carousel-text-content">
+                                <!-- start: slide content to edit -->
+                                <img src="assets/images/other_images/transp-image1.png" class="icon" alt="Lorem Ipsum">
+                                <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                                <!-- <span class="icon glyphicon glyphicon-record"></span> -->
+                                <h2 class="title">IT Training</h2>
+                                <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus
+                                    risus imperdiet nec. Suspendisse molestie lorem odio.</p>
+                                <!-- to make a popup/modal link add an onClick function call to the function:
+                                  - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');"
+                                      class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                                <!-- content which will be shown in the popup/modal when clicking on the above link
+                                  - it is important to set a unique id -->
+                                <div class="content-to-populate-in-modal" id="modal-content-2">
+                                    <h1>IT Training [Details]</h1>
+                                    <p><img data-img-src="assets/images/other_images/transp-image1.png"
+                                            class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam
+                                        at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae
+                                        dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>,
+                                        sit amet. </p>
+                                    <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                                        Suspendisse molestie lorem odio, sit amet.</p>
+                                    <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus
+                                        risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                                </div><!-- #modal-content-2 -->
+                                <!-- end: slide content to edit -->
+                            </div>
+                        </div><!-- .item -->
+                        <!-- END: CAROUSEL SLIDE 1 -->
+
+                        <!-- CAROUSEL SLIDE 2 -->
+                        <div class="item">
+                            <div class="carousel-text-content">
+                                <!-- start: slide content to edit -->
+                                <img src="assets/images/other_images/transp-image6.png" class="icon" alt="Lorem Ipsum">
+                                <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                                <!-- <span class="icon glyphicon glyphicon-stats"></span> -->
+                                <h2 class="title">Software Development</h2>
+                                <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae
+                                    dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
+                                <!-- to make a popup/modal link add an onClick function call to the function:
+                                  - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');"
+                                      class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                                <!-- content which will be shown in the popup/modal when clicking on the above link
+                                  - it is important to set a unique id -->
+                                <div class="content-to-populate-in-modal" id="modal-content-3">
+                                    <h1>Software Development [Details]</h1>
+                                    <p><img data-img-src="assets/images/other_images/transp-image6.png"
+                                            class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam
+                                        at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae
+                                        dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>,
+                                        sit amet. </p>
+                                    <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                                        Suspendisse molestie lorem odio, sit amet.</p>
+                                    <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus
+                                        risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                                </div><!-- #modal-content-3 -->
+                                <!-- end: slide content to edit -->
+                            </div>
+                        </div><!-- .item -->
+                        <!-- END: CAROUSEL SLIDE 2 -->
+
+                        <!-- CAROUSEL SLIDE 3 -->
+                        <div class="item">
+                            <div class="carousel-text-content">
+                                <!-- start: slide content to edit -->
+                                <img src="assets/images/other_images/transp-image7.png" class="icon" alt="Lorem Ipsum">
+                                <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                                <!-- <span class="icon glyphicon glyphicon-lock"></span> -->
+                                <h2 class="title">Online Marketing</h2>
+                                <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor
+                                    imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget
+                                    commodo sem. Suspendisse suscipit, sem ac.</p>
+                                <!-- to make a popup/modal link add an onClick function call to the function:
+                                  - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');"
+                                      class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                                <!-- content which will be shown in the popup/modal when clicking on the above link
+                                  - it is important to set a unique id -->
+                                <div class="content-to-populate-in-modal" id="modal-content-4">
+                                    <h1>Online Marketing</h1>
+                                    <p><img data-img-src="assets/images/other_images/transp-image7.png"
+                                            class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam
+                                        at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae
+                                        dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>,
+                                        sit amet. </p>
+                                    <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                                        Suspendisse molestie lorem odio, sit amet.</p>
+                                    <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus
+                                        risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                                </div><!-- #modal-content-4 -->
+                                <!-- end: slide content to edit -->
+                            </div>
+                        </div><!-- .item -->
+                        <!-- END: CAROUSEL SLIDE 3 -->
+
+                        <!-- CAROUSEL SLIDE 4 -->
+                        <div class="item">
+                            <div class="carousel-text-content">
+                                <!-- start: slide content to edit -->
+                                <img src="assets/images/other_images/transp-image4.png" class="icon" alt="Lorem Ipsum">
+                                <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                                <!-- <span class="icon glyphicon glyphicon-file"></span> -->
+                                <h2 class="title">Consultancy</h2>
+                                <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien,
+                                    vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl.
+                                    Proin ac convallis sapien. </p>
+                                <!-- to make a popup/modal link add an onClick function call to the function:
+                                  - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');"
+                                      class="btn btn-outline-inverse btn-sm">read more</a></p>
+
+                                <!-- content which will be shown in the popup/modal when clicking on the above link
+                                  - it is important to set a unique id -->
+                                <div class="content-to-populate-in-modal" id="modal-content-5">
+                                    <h1>Consultancy</h1>
+                                    <p><img data-img-src="assets/images/other_images/transp-image4.png"
+                                            class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Etiam
+                                        at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae
+                                        dapibus risus imperdiet nec. <a href="#">Suspendisse molestie lorem odio</a>,
+                                        sit amet. </p>
+                                    <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                                        Suspendisse molestie lorem odio, sit amet.</p>
+                                    <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus
+                                        risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                                </div><!-- #modal-content-5 -->
+                                <!-- end: slide content to edit -->
+                            </div>
+                        </div><!-- .item -->
+                        <!-- CAROUSEL SLIDE 4 -->
+
+                    </div><!-- .carousel-inner -->
+
+                    <!-- Controls -->
+                    <!-- the left/right arrows to move from one slide to the other -->
+                    <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
+                    <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
+
+                </div><!-- #about-carousel -->
+
+                <!-- End: Section content to edit -->
+
+            </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Carousel ==================== -->
+
+        <!-- ==================== SECTION TYPE: Features Grid ==================== -->
+        <!-- This type of section should contain a grid with separate items consisting of an icon and text -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="services" class="section-wrapper clearfix"
+                 data-custom-background-img="https://source.unsplash.com/random">
+            <div class="content-wrapper clearfix">
+                <div class="col-sm-11 col-md-10 pull-right">
+
+                    <!-- Start: Section content to edit -->
+
+                    <h1 class="section-title">Services</h1>
+
+                    <!-- grid -->
+                    <!-- change class "clearfix-for-2cols" to number of columns to correspond with "col-md-6" class for each grid item -->
+                    <!-- check add_clear_items_to_fix_grid_items_different_heights_issue() function -->
+                    <section class="grid row clearfix clearfix-for-2cols">
+
+                        <!-- grid item -->
+                        <div class="grid-item col-md-6">
+                            <div class="item-content clearfix">
+                                <!-- <img data-img-src="assets/images/other_images/transp-image1.png" class="lazy icon" alt="Lorem Ipsum"> -->
+                                <!-- if you want to use a custom icon instead, replace the below <span> with the commented <img> above -->
+                                <span class="icon fa fa-area-chart"></span>
+                                <div class="text-content">
+                                    <h5>IT Training</h5>
+                                    <p>Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit
+                                        imperdiet congue. Integer ultricies.</p>
+                                </div>
+                            </div><!-- end: .item-content -->
+                        </div><!-- end: .grid-item -->
+
+                        <!-- grid item -->
+                        <div class="grid-item col-md-6">
+                            <div class="item-content clearfix">
+                                <!-- <img data-img-src="assets/images/other_images/transp-image6.png" class="lazy icon" alt="Lorem Ipsum"> -->
+                                <!-- if you want to use a custom icon instead, replace the below <span> with the commented <img> above -->
+                                <span class="icon fa fa-globe"></span>
+                                <div class="text-content">
+                                    <h5>Software Development</h5>
+                                    <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue.
+                                        Integer ultricies sed ligula eget tempus.</p>
+                                </div>
+                            </div><!-- end: .item-content -->
+                        </div><!-- end: .grid-item -->
+
+                        <!-- grid item -->
+                        <div class="grid-item col-md-6">
+                            <div class="item-content clearfix">
+                                <!-- <img data-img-src="assets/images/other_images/transp-image7.png" class="lazy icon" alt="Lorem Ipsum"> -->
+                                <!-- if you want to use a custom icon instead, replace the below <span> with the commented <img> above -->
+                                <span class="icon fa fa-certificate"></span>
+                                <div class="text-content">
+                                    <h5>Online Marketing</h5>
+                                    <p>Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula
+                                        ligula eget.</p>
+                                </div>
+                            </div><!-- end: .item-content -->
+                        </div><!-- end: .grid-item -->
+
+                        <!-- grid item -->
+                        <div class="grid-item col-md-6">
+                            <div class="item-content clearfix">
+                                <!-- <img data-img-src="assets/images/other_images/transp-image4.png" class="lazy icon" alt="Lorem Ipsum"> -->
+                                <!-- if you want to use a custom icon instead, replace the below <span> with the commented <img> above -->
+                                <span class="icon fa fa-cloud"></span>
+                                <div class="text-content">
+                                    <h5>Consultancy</h5>
+                                    <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Integer
+                                        ultricies sed ligula eget tempus.</p>
+                                </div>
+                            </div><!-- end: .item-content -->
+                        </div><!-- end: .grid-item -->
+
+                    </section><!-- end: grid -->
+
+                    <!-- End: Section content to edit -->
+
+                </div><!-- .col-sm-11 -->
+            </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Features Grid ==================== -->
+
+        <!-- ==================== SECTION TYPE: Featured Items ==================== -->
+        <!-- This type of section should contain a max. of 3 items each consisting of an image and text. Each item may be linked -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="featured" class="section-wrapper clearfix"
+                 data-custom-background-img="https://source.unsplash.com/random">
+            <div class="content-wrapper clearfix">
+                <div class="col-sm-11 pull-right">
+
+                    <!-- Start: Section content to edit -->
+
+                    <h1 class="section-title">Featured</h1>
+
+                    <!-- feature columns -->
+                    <section class="feature-columns row clearfix">
+
+                        <!-- FEATURED ITEM 1 -->
+                        <article class="feature-col col-md-4">
+                            <!-- to make a popup/modal link add an onClick function call to the function:
+                                - populate_and_open_modal(event, '[id of popup content container - see below]', '[optional - selector to scroll to inside popup]', '[optional - add class to the modal container]') -->
+                            <!-- if you don't want to link the featured item, replace the below <a> with a <div class="thumbnail"> -->
+                            <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');"
+                               class="thumbnail linked">
+                                <div class="image-container">
+                                    <img data-img-src="assets/images/other_images/project-3.jpg"
+                                         class="lazy item-thumbnail" alt="Lorem Ipsum">
+                                </div>
+                                <div class="caption">
+                                    <h5>Image Carousel</h5>
+                                    <p>This feature contains an image carousel when you open popup.</p>
+                                </div><!-- .caption -->
+                            </a><!-- .thumbnail -->
+
+                            <!-- content which will be shown in the popup/modal when clicking on the above link
+                                - it is important to set a unique id -->
+                            <div class="content-to-populate-in-modal" id="modal-content-6">
+                                <h1>Sed scelerisque</h1>
+                                <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula
+                                    sit amet arcu laoreet consequat.<br/></p>
+
+                                <!-- image slider inside popup -->
+                                <!-- documentation for Owl Carousel: http://www.owlgraphic.com/owlcarousel/#how-to -->
+                                <!-- every Owl Carousel with class .popup-image-gallery are initialised with same parameters when popup is showing (initialised in /js/initialise-functions.js).
+                                  - If you want to create an Owl Carousel with different parameters, remove the class .popup-image-gallery, and intialise it in /js/initialise-function.js or at the footer of this page using the unique ID of that particular carousel instead of the class -->
+                                <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+
+                                    <!-- slide -->
+                                    <div>
+                                        <!-- caption is optional. To remove it, remove the <h6> below -->
+                                        <h6 class="caption">Caption for Image 1</h6>
+                                        <img class="lazyOwl" data-src="https://source.unsplash.com/random">
+                                    </div>
+
+                                    <!-- slide -->
+                                    <div>
+                                        <h6 class="caption">Caption for Image 2</h6>
+                                        <img class="lazyOwl" data-src="https://source.unsplash.com/random">
+                                    </div>
+
+                                    <!-- slide -->
+                                    <div>
+                                        <h6 class="caption">Caption for Image 3</h6>
+                                        <img class="lazyOwl" data-src="https://source.unsplash.com/random">
+                                    </div>
+
+                                </div>
+                                <!-- end: image slider inside popup -->
+                            </div><!-- #modal-content-6 -->
+
+                        </article>
+                        <!-- END: FEATURED ITEM 1 -->
+
+                        <!-- FEATURED ITEM 2 -->
+                        <article class="feature-col col-md-4">
+                            <!-- to make a popup/modal link add an onClick function call to the function:
+                                - populate_and_open_modal(event, '[id of popup content container - see below]', '[optional - selector to scroll to inside popup]', '[optional - add class to the modal container]') -->
+                            <!-- if you don't want to link the featured item, replace the below <a> with a <div class="thumbnail"> -->
+                            <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');"
+                               class="thumbnail linked">
+                                <div class="image-container">
+                                    <img data-img-src="assets/images/other_images/project-2.jpg"
+                                         class="lazy item-thumbnail" alt="Lorem Ipsum">
+                                </div>
+                                <div class="caption">
+                                    <h5>Text popup</h5>
+                                    <p>This feature contains generic image and text content when you open popup.</p>
+                                </div><!-- .caption -->
+                            </a><!-- .thumbnail -->
+
+                            <!-- content which will be shown in the popup/modal when clicking on the above link
+                                - it is important to set a unique id -->
+                            <div class="content-to-populate-in-modal" id="modal-content-7">
+                                <img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width"
+                                     alt="Lorem Ipsum">
+                                <h1>Sed scelerisque</h1>
+                                <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula
+                                    sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus
+                                    imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                                    Suspendisse molestie lorem odio, sit amet.</p>
+                                <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus
+                                    risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                            </div><!-- #modal-content-7 -->
+
+                        </article>
+                        <!-- END: FEATURED ITEM 2 -->
+
+                        <!-- FEATURED ITEM 3 -->
+                        <article class="feature-col col-md-4">
+                            <!-- to make a popup/modal link add an onClick function call to the function:
+                                - populate_and_open_modal(event, '[id of popup content container - see below]', '[optional - selector to scroll to inside popup]', '[optional - add class to the modal container]') -->
+                            <!-- if you don't want to link the featured item, replace the below <a> with a <div class="thumbnail"> -->
+                            <a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"
+                               class="thumbnail linked">
+                                <div class="image-container">
+                                    <img data-img-src="assets/images/other_images/project-4.jpg"
+                                         class="lazy item-thumbnail" alt="Lorem Ipsum">
+                                </div>
+                                <div class="caption">
+                                    <h5>Alternate Gallery</h5>
+                                    <p>Inside this feature's popup you'll find an alternative version of an image
+                                        gallery.</p>
+                                </div><!-- .caption -->
+                            </a><!-- .thumbnail -->
+
+                            <!-- content which will be shown in the popup/modal when clicking on the above link
+                                - it is important to set a unique id -->
+                            <div class="content-to-populate-in-modal" id="modal-content-8">
+                                <h1>Sed scelerisque</h1>
+                                <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula
+                                    sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus
+                                    imperdiet nec. Suspendisse molestie lorem odio</a>, sit amet. Adipiscing eros non
+                                    elit imperdiet congue tiam at ligula sit amet arcu.</p>
+
+                                <!-- alt image slider inside popup -->
+                                <!-- documentation for Owl Carousel: http://www.owlgraphic.com/owlcarousel/#how-to -->
+                                <!-- every Owl Carousel with class .popup-alt-image-gallery are initialised with same parameters when popup is showing (initialised in /js/initialise-functions.js) -->
+                                <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                                    <div class="item"><a href="https://source.unsplash.com/random"
+                                                         data-lightbox="popup-alt-gallery"><img class="lazyOwl"
+                                                                                                data-src="assets/images/other_images/gallery-thumb-1.jpg"></a>
+                                    </div>
+                                    <div class="item"><a href="https://source.unsplash.com/random"
+                                                         data-lightbox="popup-alt-gallery"><img class="lazyOwl"
+                                                                                                data-src="assets/images/other_images/gallery-thumb-2.jpg"></a>
+                                    </div>
+                                    <div class="item"><a href="https://source.unsplash.com/random"
+                                                         data-lightbox="popup-alt-gallery"><img class="lazyOwl"
+                                                                                                data-src="assets/images/other_images/gallery-thumb-3.jpg"></a>
+                                    </div>
+                                    <div class="item"><a href="https://source.unsplash.com/random"
+                                                         data-lightbox="popup-alt-gallery"><img class="lazyOwl"
+                                                                                                data-src="assets/images/other_images/gallery-thumb-4.jpg"></a>
+                                    </div>
+                                    <div class="item"><a href="https://source.unsplash.com/random"
+                                                         data-lightbox="popup-alt-gallery"><img class="lazyOwl"
+                                                                                                data-src="assets/images/other_images/gallery-thumb-5.jpg"></a>
+                                    </div>
+                                    <div class="item"><a href="https://source.unsplash.com/random"
+                                                         data-lightbox="popup-alt-gallery"><img class="lazyOwl"
+                                                                                                data-src="assets/images/other_images/gallery-thumb-6.jpg"></a>
+                                    </div>
+                                    <div class="item"><a href="https://source.unsplash.com/random"
+                                                         data-lightbox="popup-alt-gallery"><img class="lazyOwl"
+                                                                                                data-src="assets/images/other_images/gallery-thumb-2.jpg"></a>
+                                    </div>
+                                    <div class="item"><a href="https://source.unsplash.com/random"
+                                                         data-lightbox="popup-alt-gallery"><img class="lazyOwl"
+                                                                                                data-src="assets/images/other_images/gallery-thumb-3.jpg"></a>
+                                    </div>
+                                </div>
+                            </div><!-- #modal-content-8 -->
+
+                        </article>
+                        <!-- END: FEATURED ITEM 3 -->
+
+                    </section><!-- end: .feature-columns -->
+
+                    <!-- End: Section content to edit -->
+
+                </div><!-- .col-sm-10 -->
+            </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Featured Items ==================== -->
+
+        <!-- ==================== SECTION TYPE: Tabs ==================== -->
+        <!-- This type of section should contain generic content in tabs -->
+        <!-- More information about Bootstrap Tabs can be found on http://getbootstrap.com/javascript/#tabs -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="tabs" class="section-wrapper clearfix"
+                 data-custom-background-img="https://source.unsplash.com/random">
+            <div class="content-wrapper mid-vertical-positioning clearfix">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="single_courses_heading">
+							<h1 class="section-title">Courses</h1>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-wordpress-plain colored"></i>
+								<h3>Wordpress</h3>
+							</a>	
+						</div>
+					</div>
+
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-meteor-plain"></i>
+								<h3>WP Theme Deve</h3>
+							</a>	
+						</div>
+					</div>
+
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-django-plain"></i>
+								<h3>Django</h3>
+							</a>	
+						</div>
+					</div>
+
+				</div>
+
+				<br />
+                <div class="row">
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-python-plain"></i>
+								<h3>Python</h3>
+							</a>	
+						</div>
+					</div>
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-jquery-plain"></i>
+								<h3>jQuery</h3>
+							</a>	
+						</div>
+					</div>
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-react-original"></i>
+								<h3>Database</h3>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<br />
+                <div class="row">
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-php-plain"></i>
+								<h3>PHP</h3>
+							</a>	
+						</div>
+					</div>
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-photoshop-plain"></i>
+								<h3>Graphic</h3>
+							</a>	
+						</div>
+					</div>
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-jeet-plain"></i>
+								<h3>Web Develop</h3>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<br />
+                <div class="row">
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-javascript-plain"></i>
+								<h3>JavaScripts</h3>
+							</a>	
+						</div>
+					</div>
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-csharp-plain"></i>
+								<h3>C#</h3>
+							</a>	
+						</div>
+					</div>
+					<div class="col-md-4">					
+						<div class="single_courses_list">
+							<a href="">
+								<i class="devicon-java-plain"></i>
+								<h3>Java</h3>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!-- .col-sm-10 -->
+            </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Tabs ==================== -->
+
+        <!-- ==================== SECTION TYPE: Contact ==================== -->
+        <!-- This type of section should contain text (contact details) and a contact form -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="contact" class="section-wrapper clearfix"
+                 data-custom-background-img="https://source.unsplash.com/random">
+            <div class="content-wrapper clearfix">
+
+                <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Contact</h1>
+
+                <!-- CONTACT DETAILS -->
+                <div class="contact-details col-sm-5 col-md-3">
+                    <p>Paharpur,<br/>Dinajpur - 5200<br/>Bangladesh</p>
+                    <p>Tel: (+880) 1744 843 666</p>
+                    <p><a href="mailto:info@loremipsum.com">info@itsd.com.bd</a></p>
+                </div>
+                <!-- END: CONTACT DETAILS -->
+
+                <!-- CONTACT FORM -->
+                <div class="col-sm-7 col-md-9">
+                    <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+                    <form class="form-style validate-form clearfix" action="assets/php/mail.php" method="POST"
+                          role="form">
+
+                        <!-- form left col -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="text-field form-control validate-field required"
+                                       data-validation-type="string" id="form-name" placeholder="Full Name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="text-field form-control validate-field required"
+                                       data-validation-type="email" id="form-email" placeholder="Email Address"
+                                       name="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="text-field form-control validate-field phone"
+                                       data-validation-type="phone" id="form-contact-number"
+                                       placeholder="Contact Number" name="contact_number">
+                            </div>
+                            <div class="form-group text-right">
+                                <img id="form-captcha-img" src="assets/php/form_captcha/captcha_img.php">
+                                <input type="text" class="text-field form-control validate-field required"
+                                       data-validation-type="captcha" id="form-captcha" placeholder="Enter text"
+                                       name="captcha">
+                                <span id="form-captcha-refresh" class="fa fa-refresh" title="Reload"></span>
+                            </div>
+                        </div><!-- end: form left col -->
+
+                        <!-- form right col -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea placeholder="Message..." class="form-control validate-field required"
+                                          name="message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <img src="assets/images/theme_images/loader-form.GIF" class="form-loader">
+                                <button type="submit" class="btn btn-sm btn-outline-inverse">Submit</button>
+                            </div>
+                            <div class="form-group form-general-error-container"></div>
+                        </div><!-- end: form right col -->
+
+                    </form>
+                </div><!-- end: CONTACT FORM -->
+
+                <!-- End: Section content to edit -->
+
+            </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== ENDL SECTION TYPE: Contact ==================== -->
+
+    </section><!-- #main-content -->
+    <!-- ==================== END: MAIN CONTENT ==================== -->
+
+    <!-- Footer -->
+    <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <!-- ==================================================================
+        SOCIAL ICONS
+        ==================================================================  -->
+        <!-- Each social icon item consists of the following:
+             - Link to the social page in href of <a>
+             - social icon in the <img> - a list of social icons options are found in the directory assets/images/theme_images/social_icons/ -->
+        <ul class="social-icons">
+            <li><a href="#" target="_blank" title="Facebook"><img
+                    src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#" target="_blank" title="Twitter"><img
+                    src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#" target="_blank" title="Google+"><img
+                    src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
+        </ul>
+        <!-- ==================== END: Social Icons ==================== -->
+
+        <!-- copyright text -->
+        <div class="footer-text-line">&copy; 2017 IT Solution Dinajpur</div>
+    </section>
+    <!-- end: Footer -->
+
+</div><!-- #outer-container -->
+<!-- end: Outer Container -->
+
+<!-- Modal -->
+<!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+<div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-body clearfix">
+            </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+    </div><!-- .modal-dialog -->
+</div><!-- .modal -->
+
+<!-- Javascripts
+================================================== -->
+
+<!-- Jquery and Bootstrap JS -->
+
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Easing - for transitions and effects -->
+<script src="assets/js/jquery.easing.1.3.js"></script>
+
+<!-- background image strech script -->
+<script src="assets/js/vegas/jquery.vegas.min.js"></script>
+
+<!-- detect mobile browsers -->
+<script src="assets/js/detectmobilebrowser.js"></script>
+
+<!-- detect scrolling -->
+<script src="assets/js/jquery.scrollstop.min.js"></script>
+
+<!-- owl carousel js -->
+<script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+
+<!-- lightbox js -->
+<script src="assets/js/lightbox/js/lightbox.min.js"></script>
+
+<!-- intro animations -->
+<script src="assets/js/wow/wow.min.js"></script>
+
+<!-- responsive videos -->
+<script src="assets/js/jquery.fitvids.js"></script>
+
+<!-- Custom functions for this theme -->
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/initialise-functions.js"></script>
+
+<!-- IE9 form fields placeholder fix -->
+<!--[if lt IE 9]>
+<script>contact_form_IE9_placeholder_fix();</script>
+<![endif]-->
+
+</body>
+</html>
